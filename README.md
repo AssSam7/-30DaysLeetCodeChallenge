@@ -1,7 +1,7 @@
 # 30DaysLeetCodeChallenge
 This is a repository of my solutions to problems in #30DaysLeetCodeChallenge of LeetCode.
 
-# Day 1 - Single Number
+## Day 1 - Single Number
 **Statement:** Here given a non-empty array of integers, every element appears twice except for one. Find that single one.
 
 **Approach:** I used the 
