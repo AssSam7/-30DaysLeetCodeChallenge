@@ -26,3 +26,17 @@ This is a repository of my solutions to problems in #30DaysLeetCodeChallenge of 
 **Statement:** Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 **Approach:** Input array has a set of non-positive integers and zeros, where on encountering **zero** it must be picked from that index of the array and pushed or appended at the end of the array i.e. if length of array is 5, **zero** encountered must be the placed at new index of **(array.length-1)+1**. A simple approach to it is not to use any buffer array to copy all zeros but to alter the original array itself. My approach is a bit tricky but very subtle, it's written only in 6 lines of code. Firstly, I used the **Javascript** [**_filter()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) to get both the non-positive integers and zeros and store them into another array and push it to a buffer using [**_spread_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) and deleting the old elements from the input array, pushing these new elements. It's time complexity constitutes to O(n) only however.
+
+## Day 5 - Best Time To Buy Sell Stock II
+
+**Statement:**
+Say you have an array for which the ith element is the price of a given stock on day i.
+
+Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
+
+**Note:** You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+
+**Approach:** Question is unknowingly so simple that it seems to be very difficult and crisp as spoon feeding isn't done. Questions exemplifies that
+
+> There is an input array with values as prices and indexes as days. Design an algorithm and return the result by calculating the maximum profit occured. (Conditions are that if you buy today, next day you need to sell definitely no matter how many transactions occur)
+> Iterate through the elements and check if today's price **is greater than** yesterday's price i.e. to consider a profit. For such elements add and return the result
