@@ -41,7 +41,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 > There is an input array with values as prices and indexes as days. Design an algorithm and return the result by calculating the maximum profit occurred. (Conditions are that if you buy today, next day you need to sell definitely no matter how many transactions occur)
 > Iterate through the elements and check if today's price **is greater than** yesterday's price i.e. to consider a profit. For such elements add and return the result
 
-## Day 5 - Grouping Anagrams
+## Day 6 - Grouping Anagrams
 
 **Statement:**
 Given an array of strings, group anagrams together.
