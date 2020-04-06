@@ -40,3 +40,11 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 > There is an input array with values as prices and indexes as days. Design an algorithm and return the result by calculating the maximum profit occured. (Conditions are that if you buy today, next day you need to sell definitely no matter how many transactions occur)
 > Iterate through the elements and check if today's price **is greater than** yesterday's price i.e. to consider a profit. For such elements add and return the result
+
+## Day 5 - Grouping Anagrams
+
+**Statement:**
+Given an array of strings, group anagrams together.
+
+**Approach:**
+The question is pretty straight forward but falls under **medium** category due to intensive operations. My approach is, anagrams can be calculated by splitting the string and sorting it and comparing the array using [**_JSON.Stringify()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify). Used the object in ES6 to eliminate duplicates efficiently using [**_spread operator_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) and object returning the result i.e values of the object.
