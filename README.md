@@ -48,3 +48,14 @@ Given an array of strings, group anagrams together.
 
 **Approach:**
 The question is pretty straight forward but falls under **medium** category due to intensive operations. My approach is, anagrams can be calculated by splitting the string and sorting it and comparing the array using [**_JSON.Stringify()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify). Used the object in ES6 to eliminate duplicates efficiently using [**_spread operator_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) and object returning the result i.e values of the object.
+
+## Day 7 - Counting Elements
+
+**Statement:**
+Given an integer array arr, count element x such that x + 1 is also in arr.
+
+**Note:**
+If there're duplicates in arr, count them separately.
+
+**Approach:**
+The question is really simple, iterate over all the elements in the input and count that only if (element+1) exists.
