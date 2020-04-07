@@ -58,4 +58,4 @@ Given an integer array arr, count element x such that x + 1 is also in arr.
 If there're duplicates in arr, count them separately.
 
 **Approach:**
-The question is really simple, iterate over all the elements in the input and count that only if (element+1) exists.
+The question is really simple, iterate over all the elements in the input and count that only if (element+1) exists. Used a temporary count variable and a [**_forEach_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
