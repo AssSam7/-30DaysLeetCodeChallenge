@@ -59,3 +59,14 @@ If there're duplicates in arr, count them separately.
 
 **Approach:**
 The question is really simple, iterate over all the elements in the input and count that only if (element+1) exists. Used a temporary count variable and a [**_forEach_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+## Day 8 - Middle of the Linked List
+
+**Statement:**
+Given a non-empty, singly linked list with head node head, return a middle node of linked list.
+
+**Note:**
+If there are two middle nodes, return the second middle node.
+
+**Approach:**
+Question is a part of the one of the most important data structures in Computer Programming, Singly Linked List. Singly means the linked list can traverse only in the single direction i.e. forward. Question is to identify the middle element in the linked list, if more than 1 exists, return last most i.e. second node.
