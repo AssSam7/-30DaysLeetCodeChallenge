@@ -74,7 +74,7 @@ Question is a part of the one of the most important data structures in Computer 
 ## Day 9 - Backspace Compare
 
 **Statement:**
-Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
+Given two strings **'S'** and **'T'**, return if they are equal when both are typed into empty text editors. # means a backspace character.
 
 **Approach:**
 The problem needs to be solved in **O(n)** or **O(1)** complexity for both time and space. Hence, deleting the backspace character should happen on the original string itself in order to achieve the desired complexity. Take 2 for loops, First iterate over **S** string, identify 2 edge cases
