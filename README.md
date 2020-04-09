@@ -80,5 +80,6 @@ Given two strings S and T, return if they are equal when both are typed into emp
 The problem needs to be solved in **O(n)** or **O(1)** complexity for both time and space. Hence, deleting the backspace character should happen on the original string itself in order to achieve the desired complexity. Take 2 for loops, First iterate over **S** string, identify 2 edge cases
 
 - When the whole string has only **'#'** character
-- When the whole string has multiple backspace characters('#')
-  For the above cases slice the input string and store into the same **'S'** and **'T'**
+- When the whole string has multiple backspace characters('#').
+
+For the above cases slice the input string and store into the same **'S'** and **'T'**
