@@ -97,14 +97,14 @@ Design a stack that supports push, pop, top, and retrieving the minimum element 
 **Approach:**
 This problem needs to implement a basic stack data structure with **push()**, **pop()**, **top()** and **getMin()** as the methods of **Stack** object (Class in languages like **Java**). As others, I used Javascript as my language to solve this challenge. In Javascript with the advanced **ES6+** concepts like classes, protoypical inheritance a similar kind of code can be created here like in other **OOP** languages like **Java**. In this approach [**_function constructors_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) are used to implement the **OOPs** concept. I have used private variables to encapsulate the data, In **Javascript** private variables can be created inside objects by using **\_** before variable declarations.
 
-**_push():_**
+> **_push():_**
 Push an element inside the stack by using native [**_push()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) method of Array object (Array.prototype.pop).
 
-**_pop():_**
+> **_pop():_**
 Pop i.e. remove the last inserted element of the stack, use the native [**_pop()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) method of Array object (Array.prototype.pop).
 
-**_top():_**
+> **_top():_**
 Finding out the top is very simple, top is nothing but the length of the stack - 1
 
-**_getMin():_**
+> **_getMin():_**
 Finding the minimum element of the stack, can be done by [**_Math.min()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min). It accepts an iterable, to pass an array [**_spread operator_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) can be used.
