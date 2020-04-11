@@ -108,3 +108,14 @@ Finding out the top is very simple, top is nothing but the length of the stack -
 
 **_getMin():_**
 Finding the minimum element of the stack, can be done by [**_Math.min()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min). It accepts an iterable, to pass an array [**_spread operator_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) can be used.
+
+## Day 11 - Diameter of Binary Tree
+
+**Statement:**
+Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+
+**Note:**
+The length of path between two nodes is represented by the number of edges between them.
+
+**Approach:**
+The approach is very simple, you need to calculate the depth of the tree both left and right. Diameter of a binary tree is the maximum number of edges between any 2 nodes of the graph i.e. the most distant 2 nodes of the tree.
