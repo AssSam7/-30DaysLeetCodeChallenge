@@ -119,3 +119,18 @@ The length of path between two nodes is represented by the number of edges betwe
 
 **Approach:**
 The approach is very simple, you need to calculate the depth of the tree both left and right. Diameter of a binary tree is the maximum number of edges between any 2 nodes of the graph i.e. the most distant 2 nodes of the tree.
+
+## Day 12 - Last Stone Weight
+
+**Statement:**
+We have a collection of stones, each stone has a positive integer weight.
+
+Each turn, we choose the two heaviest stones and smash them together. Suppose the stones have weights x and y with x <= y. The result of this smash is:
+
+- If x == y, both stones are totally destroyed;
+- If x != y, the stone of weight x is totally destroyed, and the stone of weight y has new weight y-x.
+
+At the end, there is at most 1 stone left. Return the weight of this stone (or 0 if there are no stones left.)
+
+**Approach:**
+The problem is very simple, firstly need to extract the first maximum and second maximum number from the input and based on the above conditions if they're not equal push their **difference** to the array. We need to repeat the same until there is one or none of the elements in the array.
