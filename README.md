@@ -134,3 +134,27 @@ At the end, there is at most 1 stone left. Return the weight of this stone (or 0
 
 **Approach:**
 The problem is very simple, firstly need to extract the first maximum and second maximum number from the input and based on the above conditions if they're not equal push their **difference** to the array. We need to repeat the same until there is one or none of the elements in the array.
+
+## Day 13 - Contiguous Array
+
+**Statement:**
+Given a binary array, find the maximum length of a contiguous subarray with equal number of 0 and 1.
+
+**Approach:**
+The problem is little tricky, the main concern is it's complexity. Naive approach requires **O(n^2)** to **O(n^3)** complexity, while the problem doesn't permit to solve using this approach. It has more than 500 test cases and required **O(n)** logic. This approach is referenced from the solutions, and is a hashmap approach.
+
+## Day 14 - Perform String Shifts
+
+**Statement:**
+You are given a string s containing lowercase English letters, and a matrix shift, where shift[i] = [direction, amount]:
+
+- direction can be 0 (for left shift) or 1 (for right shift).
+- amount is the amount by which string s is to be shifted.
+- A left shift by 1 means remove the first character of s and append it to the end.
+- Similarly, a right shift by 1 means remove the last character of s and add it to the beginning.
+  Return the final string after all operations.
+
+**Approach:**
+The problem is very simple, in the input there's an array with all the **shift** operations. Perform the shift operations accordingly and return the final string after all the shifts. If the first value in the shift array is **'0'** then take the first **'arr[1]'** elements from the string and shift to the end, similarly if the first value in the shift array is **'1'** then take the last **'arr[1]'** elements from the string and shift to the beginning.
+
+> Ex: If shift array is [0,3] then shift the first **'3'** elements to the end i.e. append the first **'3'** elements and update the input string
