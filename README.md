@@ -159,6 +159,6 @@ The problem is very simple, in the input there's an array with all the **shift**
 
 **_Example_**
 
-> 1. If shift array is **[0,3]** then shift the first **'3'** elements to the end i.e. append the first **'3'** elements and update the input string
->
-> 2. If shift array is **[1,2]** then shift the last **'2'** elements to the beginning i.e. insert the last **'2'** elements to the beginning and update the input string
+1. If shift array is **[0,3]** then shift the first **'3'** elements to the end i.e. append the first **'3'** elements and update the input string
+
+2. If shift array is **[1,2]** then shift the last **'2'** elements to the beginning i.e. insert the last **'2'** elements to the beginning and update the input string
