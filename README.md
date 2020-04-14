@@ -156,8 +156,8 @@ You are given a string s containing lowercase English letters, and a matrix shif
 
 **Approach:**
 The problem is very simple, in the input there's an array with all the **shift** operations. Perform the shift operations accordingly and return the final string after all the shifts. If the first value in the shift array is **'0'** then take the first **'arr[1]'** elements from the string and shift to the end, similarly if the first value in the shift array is **'1'** then take the last **'arr[1]'** elements from the string and shift to the beginning.
+**_Example_**
 
-> Ex:
->
 > 1. If shift array is **[0,3]** then shift the first **'3'** elements to the end i.e. append the first **'3'** elements and update the input string
+>
 > 2. If shift array is **[1,2]** then shift the last **'2'** elements to the beginning i.e. insert the last **'2'** elements to the beginning and update the input string
