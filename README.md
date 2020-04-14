@@ -155,7 +155,7 @@ You are given a string s containing lowercase English letters, and a matrix shif
   Return the final string after all operations.
 
 **Approach:**
-The problem is very simple, in the input there's an array with all the **shift** operations. Perform the shift operations accordingly and return the final string after all the shifts. If the first value in the shift array is **'0'** then take the first **'arr[1]'** elements from the string and shift to the end, similarly if the first value in the shift array is **'1'** then take the last **'arr[1]'** elements from the string and shift to the beginning.
+The problem is very simple, in the input there's an array with all the **shift** operations. Perform the shift operations accordingly and return the final string after all the shifts. If the first value in the shift array is **'0'** then take the first **'arr[1]'** elements from the string and shift to the end, similarly if the first value in the shift array is **'1'** then take the last **'arr[1]'** elements from the string and shift to the beginning. For extracting and updating javascript [**_substring()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) serves the purpose.
 
 **_Example_**
 
