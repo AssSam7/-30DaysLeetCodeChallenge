@@ -175,7 +175,7 @@ Please solve it without **division** and in **O(n)**.
 Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
 
 **Approach:**
-This problem can be solved in many ways, I have solved it using 2 approached
+This problem can be solved in many ways, I have solved it using 2 approaches
 
 **1.**
 Use the [**_map()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [**_reduce_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) methods of **Array.prototype** in Javascript. In this approach use **'\_'**, **'i'** as the parameter to the map and using the reduce function with parameters as **prod** as **accumulator**, **val** as **current value** and **j** as **index**, return the product with a simple formule like if **'i'** is equal to **'j'** then multiple the **prod** by 1 else by **current value(val)**.
