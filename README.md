@@ -162,3 +162,23 @@ The problem is very simple, in the input there's an array with all the **shift**
 1. If shift array is **[0,3]** then shift the first **'3'** elements to the end i.e. append the first **'3'** elements and update the input string
 
 2. If shift array is **[1,2]** then shift the last **'2'** elements to the beginning i.e. insert the last **'2'** elements to the beginning and update the input string
+
+## Day 15 - Product of Array Except Self
+
+**Statement:**
+Given an array **nums** of n integers where n > 1, return an array **output** such that **output[i]** is equal to the product of all the elements of **nums** except **nums[i]**.
+
+**Note:**
+Please solve it without **division** and in **O(n)**.
+
+**Follow up:**
+Could you solve it with constant space complexity? (The output array does not count as extra space for the purpose of space complexity analysis.)
+
+**Approach:**
+This problem can be solved in many ways, I have solved it using 2 approached
+
+**1.**
+Use the [**_map()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [**_reduce_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) methods of **Array.prototype** in Javascript. In this approach use **'\_'**, **'i'** as the parameter to the map and using the reduce function with parameters as **prod** as **accumulator**, **val** as **current value** and **j** as **index**, return the product with a simple formule like if **'i'** is equal to **'j'** then multiple the **prod** by 1 else by **current value(val)**.
+
+**2.**
+Similar to the above approach use the same [**_map()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [**_reduce_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) methods of **Array.prototype** in Javascript. In **map** take the **item** as the **current item**, **i** as **index** and **arr** as **input array** and [**_slice_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) the **arr** to store it in a buffer and remove the current element from that buffer and perform the multiplication using the [**_reduce_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) method.
