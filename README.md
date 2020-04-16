@@ -182,3 +182,21 @@ Use the [**_map()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 **2.**
 Similar to the above approach use the same [**_map()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) and [**_reduce_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) methods of **Array.prototype** in Javascript. In **map** take the **item** as the **current item**, **i** as **index** and **arr** as **input array** and [**_slice_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) the **arr** to store it in a buffer and remove the current element from that buffer and perform the multiplication using the [**_reduce_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) method.
+
+## Day 16 - Valid Paranthesis
+
+**Statement:**
+Given a string containing only three types of characters: '(', ')' and '\*', write a function to check whether this string is valid. We define the validity of a string by these rules:
+
+1. Any left parenthesis '(' must have a corresponding right parenthesis ')'.
+
+2. Any right parenthesis ')' must have a corresponding left parenthesis '('.
+
+3. Left parenthesis '(' must go before the corresponding right parenthesis ')'.
+
+4. '\*' could be treated as a single right parenthesis ')' or a single left parenthesis '(' or an empty string.
+
+5. An empty string is also valid.
+
+**Approach:**
+This approach handle the main invalid cases, Take two loops to iterate over the input array. If you encounter an opening bracket i.e. **'('** or **'asterick'** increment a counter, else if you encounter a closing bracker i.e. **')'** **'asterick'** again increment the counter. In the first iteration for the first case if you find closing bracket **')'** and the **counter<1** then return **false** right away, similarly in the second iteration for the second case. The problem works on these edge cases.
