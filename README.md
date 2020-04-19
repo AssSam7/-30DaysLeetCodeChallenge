@@ -200,3 +200,19 @@ Given a string containing only three types of characters: '(', ')' and '\*', wri
 
 **Approach:**
 This approach handle the main invalid cases, Take two loops to iterate over the input array. If you encounter an opening bracket i.e. **'('** or **'asterick'** increment a counter, else if you encounter a closing bracker i.e. **')'** **'asterick'** again increment the counter. In the first iteration for the first case if you find closing bracket **')'** and the **counter<1** then return **false** right away, similarly in the second iteration for the second case. The problem works on these edge cases.
+
+## Day 19 - Search in Rotated Sorted Array
+
+**Statement:**
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+
+(i.e., **[0,1,2,4,5,6,7]** might become **[4,5,6,7,0,1,2]**).
+
+You are given a target value to search. If found in the array return its **index**, otherwise return **-1**.
+
+You may assume no duplicate exists in the array.
+
+Your algorithm's runtime complexity must be in the order of **O(log n)**.
+
+**Approach:**
+This problem is meant to be solved using some search algorithm in order to compensate under the order of **O(log n)**. I solved it using javascript [**_indexOf_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf), which serves the purpose.
