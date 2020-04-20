@@ -216,3 +216,13 @@ Your algorithm's runtime complexity must be in the order of **O(log n)**.
 
 **Approach:**
 This problem is meant to be solved using some search algorithm in order to compensate under the order of **O(log n)**. I solved it using javascript [**_indexOf_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf), which serves the purpose.
+
+## Day 20 - Construct Binary Search Tree from Preorder Traversal
+
+**Statement:**
+Return the root node of a binary search tree that matches the given **preorder** traversal.
+
+(_Recall that a binary search tree is a binary tree where for every node, any descendant of **node.left** has a value less than **node.val**, and any descendant of **node.right** has a value greater than **node.val**. Also recall that a **preorder** traversal displays the value of the node first, then traverses node.**left**, then traverses **node.right**._)
+
+**Approach:**
+Problem is to construct a **binary search tree** from the given input array of the **pre-order** traversal. Approach is to use a recursive function to insert and return the values according to the **pre-order** traversal. I used [**_-Infinity_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) as the **low** and [**_Infinity_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) as high values passed as parameter to the recursive function to check the range.
