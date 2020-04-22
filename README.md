@@ -245,4 +245,4 @@ Output: 2;
 2. The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
 
 **Approach:**
-This problem stands in **Medium** difficulty level at Leetcode. Approach is **bruteforce**, which ideally is not **O(n^2)** but serves the purpose. Take two loops, iterate in first loop and initialize a variable **sum** to **0**, in the second iteration increment the **sum** to the value occurred in the iteration. Here, check the condition if the sum happens to be **k** then count that particular sub array. Return the **sub array**.
+This problem stands in the **Medium** difficulty level at Leetcode. The approach is **brute force**, which ideally is not **O(n^2)** but serves the purpose. Take two loops, iterate in the first loop and initialize a variable **sum** to **0**, in the second iteration increment the **sum** to the value occurred in the iteration. Here, check the condition if the sum happens to be **k** then count that particular sub-array. Return the **sub-array**.
