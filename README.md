@@ -226,3 +226,23 @@ Return the root node of a binary search tree that matches the given **preorder**
 
 **Approach:**
 Problem is to construct a **binary search tree** from the given input array of the **pre-order** traversal. Approach is to use a recursive function to insert and return the values according to the **pre-order** traversal. I used [**_-Infinity_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) as the **low** and [**_Infinity_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity) as high values passed as parameter to the recursive function to check the range. **TreeNode** is the function constructor for this tree, a new value can be inserted in here using [**_new operator_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new). The arguments to the **TreeNode** function constructor is the return value of [**_shift()_**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) i.e. the first element of the input array. Create a temporary element like **root** to store the buffer element and pass to the function constuctor, returning it.
+
+## Day 22 - Sub Array with Sum Equal to K
+
+**Statement:**
+Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k.
+
+**Example 1:**
+
+```javascript
+Input: (nums = [1, 1, 1]), (k = 2);
+Output: 2;
+```
+
+**Note:**
+
+1. The length of the array is in range [1, 20,000].
+2. The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
+
+**Approach:**
+This problem stands in **Medium** difficulty level at Leetcode. Approach is **bruteforce**, which ideally is not **O(n^2)** but serves the purpose. Take two loops, iterate in first loop and initialize a variable **sum** to **0**, in the second iteration increment the **sum** to the value occurred in the iteration. Here, check the condition if the sum happens to be **k** then count that particular sub array. Return the **sub array**.
